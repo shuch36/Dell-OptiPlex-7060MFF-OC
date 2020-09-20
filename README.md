@@ -1,16 +1,23 @@
 # Dell-7060-OC
 Dell 7060系列 Catalina 和 Big Sur 的OpenCore引导
 
-整体配置：
+整体配置：Overall configuration:
 Dell 7060MFF @ macOS 10.15.6 (Macmini8,1)
-Overall configuration:
+
 CPU 	Intel Core i3-8100T @ 3.10 GHz
+
 MB	Dell OptiPlex Q370
+
 MEM	Samsung 8 GB DDR4 2133MHz x2
+
 VGA	Intel UHD Grahpics 630 2048MB
+
 LAN	BCM94360cs2 +Ngff Adapter
+
 AUD	Realtek ALC255 ID=11
+
 SSD	Samsung SM951 250G
+
 
 安装之前请先在u盘ESP（大于200MB）区中解压EFI-GrubShell.zip
 
@@ -23,6 +30,7 @@ setup_var 0x5BE 0x0  （禁用CFG lock，重置bios需要重新执行两条命�
 之后，解压EFI-OC0.6.0.zip到esp分区（大于200MB），开机选择安装盘即可
 
 PS：经测试，可以支持10.15.6和升级big sur,声卡未测试内置喇叭，耳机孔和线路输出无问题，麦克没有去修复
+
 
 Before installation, please decompress EFI in USB flash disk ESP (larger than 200MB)- GrubShell.zip
 
