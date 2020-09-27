@@ -1,4 +1,4 @@
-#Dell 7060系列 Catalina 和 Big Sur 的OpenCore引导
+#Dell 7060系列 Catalina 和 Big Sur 的OpenCore 0.6.0引导
 
 整体配置：Overall configuration:
 
