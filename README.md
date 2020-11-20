@@ -1,5 +1,9 @@
 #Dell 7060系列 Catalina 和 Big Sur 的OpenCore 0.6.0引导
 
+2020年11月20日更新：Acpi下Patch只需要第一个HDEF那个，另外2个不需要；
+
+显卡只需要注入平台ID，其余的不需要
+
 整体配置：Overall configuration:
 
 Dell 7060MFF @ macOS 10.15.6 (Macmini8,1)
