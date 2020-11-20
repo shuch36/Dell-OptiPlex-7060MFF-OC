@@ -1,14 +1,18 @@
 Dell 7060系列 Catalina 和 Big Sur 的OpenCore引导
 
+2020年11月20日更新：Acpi下Patch只需要第一个HDEF那个，另外2个不需要；
+
+显卡只需要注入平台ID，其余的不需要
+
 整体配置：Overall configuration:
 
-Dell 7060MFF @ macOS 10.15.6 (Macmini8,1)
+Dell 7060MFF @ macOS 11.0.1 (Macmini8,1)
 
 CPU Intel Core i3-8100T @ 3.10 GHz
 
 MB Dell OptiPlex Q370
 
-MEM Samsung 8 GB DDR4 2133MHz x2
+MEM Samsung 8 GB DDR4 2133MHz 
 
 VGA Intel UHD Grahpics 630 2048MB
 
