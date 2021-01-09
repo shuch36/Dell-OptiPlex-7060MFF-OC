@@ -280,7 +280,7 @@
 				<key>hda-gfx</key>
 				<string>onboard-2</string>
 				<key>model</key>
-				<string>Nvdia GTX 1050Ti</string>
+				<string>Intel UHD630</string>
 			</dict>
 		</dict>
 		<key>Delete</key>
