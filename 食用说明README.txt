@@ -1,31 +1,40 @@
-Dell 7060系列 Catalina 和 Big Sur 的OpenCore引导
+#Dell 7060系列 Catalina 和 Big Sur 的OpenCore 0.6.4引导  
 
-整体配置：Overall configuration:
+-------------------------本机配置-----------------------------------------------------------------  
+Dell 7060MFF @ macOS 10.15.7  
+CPU Intel Core i3-8100T @ 3.10 GHz  
+主板 Dell OptiPlex Q370  
+内存 Samsung 8 GB DDR4 2133MHz  
+显卡 Intel UHD Grahpics 630 2048MB  
+网卡 转接版+BCM94360cs2  
+声卡 Realtek ALC255  
+硬盘 Samsung SM951 250G  
 
-Dell 7060MFF @ macOS 11.0.1 (Macmini8,1)
+-------------------------主要功能-----------------------------------------------------------------  
+声卡：OK  
+显卡：OK  
+有线：OK  
+无线：OK  
+睡眠：OK  
+AirDrop ：OK  
+Handoff ：OK   
+FaceTime：OK  
+iMessage ：OK  
 
-CPU Intel Core i3-8100T @ 3.10 GHz
+-------------------------更新日志-----------------------------------------------------------------  
+不出意外，应该不会更新了  
+2021.1.1  
+1.更新OpenCore版本到了 v 0.6.4  
+2.定制了USBPort和EC-USBX控制器  
+2020.9.17  
+1.更新OpenCore版本到了 v 0.6.0  
+2.支持升级到 Big Sur 11.0   
+3.声卡支持，注入id=11  
 
-MB Dell OptiPlex Q370
-
-MEM Samsung 8 GB DDR4 2133MHz 
-
-VGA Intel UHD Grahpics 630 2048MB
-
-LAN BCM94360cs2 +Ngff Adapter
-
-AUD Realtek ALC255 ID=11
-
-SSD Samsung SM951 250G
-
-安装之前请先在u盘ESP（大于200MB）区中复制1.EFI_grub文件夹，并更名为efi
-
-进入grub并执行命令
-
-setup_var 0x8DC 0x2 （修改dvmt 为64MB，只适合dell 7060TM/SSF/MFF,其他机器请自行查找）
-
-setup_var 0x5BE 0x0 （禁用CFG lock，重置bios需要重新执行两条命令）
-
-之后，复制2.EFI_OC0.6.4文件夹到esp分区（大于200MB），并更名为efi，开机选择安装盘即可
-
+-------------------------安装方法-----------------------------------------------------------------  
+安装之前请先在u盘ESP（大于200MB）区中复制1.EFI_grub文件夹，并更名为efi  
+进入grub并执行命令  
+setup_var 0x8DC 0x2（修改dvmt 为64MB，只适合dell 7060TM/SSF/MFF,其他机器请自行查找）   
+setup_var 0x5BE 0x0（禁用CFG lock，重置bios需要重新执行两条命令）  
+之后，复制2.EFI_OC0.6.4文件夹到esp分区（大于200MB），并更名为efi，开机选择安装盘即可  
 PS：经测试，可以支持10.15.6和升级big sur,声卡未测试内置喇叭，耳机孔和线路输出无问题，麦克没有去修复
